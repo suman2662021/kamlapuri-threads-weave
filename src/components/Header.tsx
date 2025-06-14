@@ -63,9 +63,9 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Always visible background */}
           <button
-            className="md:hidden p-2 rounded-md text-textile-indigo hover:text-textile-maroon transition-colors bg-textile-cream/80 hover:bg-textile-cream shadow-sm"
+            className="md:hidden p-2 rounded-md text-textile-indigo hover:text-textile-maroon transition-colors bg-textile-cream/90 hover:bg-textile-cream shadow-md backdrop-blur-sm border border-textile-sand/50"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
