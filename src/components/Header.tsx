@@ -36,11 +36,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-textile-maroon rounded-full flex items-center justify-center">
-              <span className="text-textile-cream font-playfair font-bold text-xl">K</span>
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-textile-maroon rounded-full flex items-center justify-center">
+              <span className="text-textile-cream font-playfair font-bold text-lg sm:text-xl">K</span>
             </div>
             <div>
-              <h1 className="font-playfair font-bold text-xl text-textile-indigo">
+              <h1 className="font-playfair font-bold text-sm sm:text-xl text-textile-indigo">
                 Kamlapuri Textile Agency
               </h1>
               <p className="text-xs text-textile-maroon font-medium">
@@ -65,8 +65,9 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-textile-indigo hover:text-textile-maroon transition-colors"
+            className="md:hidden p-2 rounded-md text-textile-indigo hover:text-textile-maroon transition-colors bg-textile-cream/80 hover:bg-textile-cream shadow-sm"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -74,18 +75,20 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-4 pt-4 border-t border-textile-sand animate-fade-in">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block py-3 text-textile-indigo hover:text-textile-maroon transition-colors duration-300 font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+          <div className="md:hidden fixed inset-0 top-[72px] bg-textile-cream/95 backdrop-blur-sm z-40 animate-fade-in">
+            <nav className="container mx-auto px-4 pt-4 pb-8 overflow-y-auto max-h-[calc(100vh-72px)]">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block py-4 text-lg text-center text-textile-indigo hover:text-textile-maroon transition-colors duration-300 font-medium border-b border-textile-sand/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
         )}
       </div>
     </header>
