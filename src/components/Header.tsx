@@ -28,7 +28,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-lg border-b border-textile-light-blue' 
+          ? 'bg-textile-cream/95 backdrop-blur-sm shadow-lg border-b border-textile-sand' 
           : 'bg-transparent'
       }`}
     >
@@ -36,14 +36,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-textile-blue rounded-full flex items-center justify-center">
-              <span className="text-white font-playfair font-bold text-xl">K</span>
+            <div className="w-12 h-12 bg-textile-maroon rounded-full flex items-center justify-center">
+              <span className="text-textile-cream font-playfair font-bold text-xl">K</span>
             </div>
             <div>
-              <h1 className="font-playfair font-bold text-xl text-textile-blue">
+              <h1 className="font-playfair font-bold text-xl text-textile-indigo">
                 Kamlapuri Textile Agency
               </h1>
-              <p className="text-xs text-textile-blue-dark font-medium">
+              <p className="text-xs text-textile-maroon font-medium">
                 Since 1981
               </p>
             </div>
@@ -55,17 +55,17 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-textile-blue hover:text-textile-blue-dark transition-colors duration-300 font-medium relative group"
+                className="text-textile-indigo hover:text-textile-maroon transition-colors duration-300 font-medium relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-textile-blue-dark transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-textile-maroon transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-textile-blue hover:text-textile-blue-dark transition-colors"
+            className="md:hidden p-2 text-textile-indigo hover:text-textile-maroon transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,12 +74,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-4 pt-4 border-t border-textile-light-blue animate-fade-in">
+          <nav className="md:hidden mt-4 pt-4 border-t border-textile-sand animate-fade-in">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block py-3 text-textile-blue hover:text-textile-blue-dark transition-colors duration-300 font-medium"
+                className="block py-3 text-textile-indigo hover:text-textile-maroon transition-colors duration-300 font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}

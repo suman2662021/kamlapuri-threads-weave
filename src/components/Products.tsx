@@ -52,13 +52,13 @@ const Products = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex items-center justify-center space-x-4 mb-6">
-            <div className="h-1 w-16 bg-textile-blue"></div>
-            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-textile-blue">
+            <div className="h-1 w-16 bg-textile-gold"></div>
+            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-textile-indigo">
               Our Products
             </h2>
-            <div className="h-1 w-16 bg-textile-blue"></div>
+            <div className="h-1 w-16 bg-textile-gold"></div>
           </div>
-          <p className="text-textile-blue/70 text-lg max-w-2xl mx-auto">
+          <p className="text-textile-indigo/70 text-lg max-w-2xl mx-auto">
             Discover our comprehensive range of premium textile products sourced from India's finest mills and weaving centers.
           </p>
         </div>
@@ -68,7 +68,7 @@ const Products = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in border border-textile-light-blue"
+              className="group relative bg-textile-cream rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in border border-textile-sand"
               style={{ animationDelay: `${index * 0.1}s` }}
               onMouseEnter={() => setHoveredProduct(index)}
               onMouseLeave={() => setHoveredProduct(null)}
@@ -80,13 +80,13 @@ const Products = () => {
                   alt={product.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-textile-blue/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-textile-indigo/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 {/* Hover Overlay */}
-                <div className={`absolute inset-0 bg-textile-blue/90 flex items-center justify-center transition-all duration-300 ${
+                <div className={`absolute inset-0 bg-textile-maroon/90 flex items-center justify-center transition-all duration-300 ${
                   hoveredProduct === index ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <div className="text-center text-white p-4">
+                  <div className="text-center text-textile-cream p-4">
                     <h4 className="font-playfair text-xl font-semibold mb-2">Premium Quality</h4>
                     <p className="text-sm">Trusted by manufacturers across India</p>
                   </div>
@@ -95,19 +95,19 @@ const Products = () => {
 
               {/* Product Content */}
               <div className="p-6">
-                <h3 className="font-playfair text-xl font-semibold text-textile-blue mb-3 group-hover:text-textile-blue-dark transition-colors">
+                <h3 className="font-playfair text-xl font-semibold text-textile-indigo mb-3 group-hover:text-textile-maroon transition-colors">
                   {product.name}
                 </h3>
                 
-                <p className="text-textile-blue/70 mb-4 text-sm leading-relaxed">
+                <p className="text-textile-indigo/70 mb-4 text-sm leading-relaxed">
                   {product.description}
                 </p>
 
                 {/* Features */}
                 <ul className="space-y-2">
                   {product.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-textile-blue/80">
-                      <div className="w-1.5 h-1.5 bg-textile-blue rounded-full mr-3"></div>
+                    <li key={featureIndex} className="flex items-center text-sm text-textile-indigo/80">
+                      <div className="w-1.5 h-1.5 bg-textile-gold rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
@@ -124,16 +124,16 @@ const Products = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-in">
-          <div className="bg-gradient-to-r from-textile-blue to-textile-blue-dark rounded-xl p-8 text-center">
-            <h3 className="font-playfair text-2xl font-semibold text-white mb-4">
+          <div className="bg-gradient-to-r from-textile-maroon to-textile-maroon-dark rounded-xl p-8 text-center">
+            <h3 className="font-playfair text-2xl font-semibold text-textile-cream mb-4">
               Need Custom Textile Solutions?
             </h3>
-            <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+            <p className="text-textile-cream/90 mb-6 max-w-2xl mx-auto">
               With over 40 years of experience, we can source specialized fabrics and custom quantities to meet your exact requirements.
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center px-8 py-3 bg-white text-textile-blue font-semibold rounded-lg shadow-lg hover:bg-textile-light-blue transition-all duration-300 hover:shadow-xl"
+              className="inline-flex items-center px-8 py-3 bg-textile-cream text-textile-maroon font-semibold rounded-lg shadow-lg hover:bg-textile-sand transition-all duration-300 hover:shadow-xl"
             >
               Request Custom Quote
             </a>
