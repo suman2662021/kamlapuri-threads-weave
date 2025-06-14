@@ -7,44 +7,44 @@
 
 @layer base {
   :root {
-    --background: 253 246 227; /* textile-cream */
-    --foreground: 30 58 138; /* textile-indigo */
+    --background: 255 255 255; /* pure white */
+    --foreground: 59 130 246; /* light blue */
 
-    --card: 253 246 227; /* textile-cream */
-    --card-foreground: 30 58 138; /* textile-indigo */
+    --card: 255 255 255; /* pure white */
+    --card-foreground: 59 130 246; /* light blue */
 
-    --popover: 253 246 227; /* textile-cream */
-    --popover-foreground: 30 58 138; /* textile-indigo */
+    --popover: 255 255 255; /* pure white */
+    --popover-foreground: 59 130 246; /* light blue */
 
-    --primary: 139 21 56; /* textile-maroon */
-    --primary-foreground: 253 246 227; /* textile-cream */
+    --primary: 59 130 246; /* light blue */
+    --primary-foreground: 255 255 255; /* pure white */
 
-    --secondary: 244 228 188; /* textile-sand */
-    --secondary-foreground: 30 58 138; /* textile-indigo */
+    --secondary: 239 246 255; /* very light blue */
+    --secondary-foreground: 59 130 246; /* light blue */
 
-    --muted: 244 228 188; /* textile-sand */
-    --muted-foreground: 107 15 42; /* textile-maroon-dark */
+    --muted: 239 246 255; /* very light blue */
+    --muted-foreground: 59 130 246; /* light blue */
 
-    --accent: 212 175 55; /* textile-gold */
-    --accent-foreground: 30 58 138; /* textile-indigo */
+    --accent: 59 130 246; /* light blue */
+    --accent-foreground: 255 255 255; /* pure white */
 
     --destructive: 220 38 38;
-    --destructive-foreground: 253 246 227;
+    --destructive-foreground: 255 255 255;
 
-    --border: 244 228 188; /* textile-sand */
-    --input: 244 228 188; /* textile-sand */
-    --ring: 139 21 56; /* textile-maroon */
+    --border: 239 246 255; /* very light blue */
+    --input: 239 246 255; /* very light blue */
+    --ring: 59 130 246; /* light blue */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 253 246 227;
-    --sidebar-foreground: 30 58 138;
-    --sidebar-primary: 139 21 56;
-    --sidebar-primary-foreground: 253 246 227;
-    --sidebar-accent: 244 228 188;
-    --sidebar-accent-foreground: 30 58 138;
-    --sidebar-border: 244 228 188;
-    --sidebar-ring: 139 21 56;
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 59 130 246;
+    --sidebar-primary: 59 130 246;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 239 246 255;
+    --sidebar-accent-foreground: 59 130 246;
+    --sidebar-border: 239 246 255;
+    --sidebar-ring: 59 130 246;
   }
 }
 
@@ -65,26 +65,26 @@
 @layer components {
   .textile-pattern {
     background-image: 
-      linear-gradient(45deg, rgba(139, 21, 56, 0.1) 25%, transparent 25%), 
-      linear-gradient(-45deg, rgba(139, 21, 56, 0.1) 25%, transparent 25%), 
-      linear-gradient(45deg, transparent 75%, rgba(139, 21, 56, 0.1) 75%), 
-      linear-gradient(-45deg, transparent 75%, rgba(139, 21, 56, 0.1) 75%);
+      linear-gradient(45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%), 
+      linear-gradient(-45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%), 
+      linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%);
     background-size: 20px 20px;
     background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   }
 
   .hero-gradient {
     background: linear-gradient(135deg, 
-      rgba(253, 246, 227, 1) 0%, 
-      rgba(244, 228, 188, 1) 50%, 
-      rgba(253, 246, 227, 1) 100%);
+      rgba(255, 255, 255, 1) 0%, 
+      rgba(239, 246, 255, 1) 50%, 
+      rgba(255, 255, 255, 1) 100%);
   }
 
   .shimmer-effect {
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(212, 175, 55, 0.4),
+      rgba(59, 130, 246, 0.4),
       transparent
     );
     background-size: 200% 100%;

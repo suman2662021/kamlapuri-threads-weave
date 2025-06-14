@@ -32,32 +32,32 @@ const Hero = () => {
             {/* Left Content */}
             <div className="space-y-8 animate-slide-in-left">
               <div className="space-y-4">
-                <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-textile-indigo leading-tight">
+                <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-textile-blue leading-tight">
                   India's Trusted
-                  <span className="block text-textile-maroon">Cloth Commission</span>
+                  <span className="block text-textile-blue-dark">Cloth Commission</span>
                   <span className="block">Agency</span>
                 </h1>
                 
                 <div className="flex items-center space-x-3">
-                  <div className="h-1 w-16 bg-textile-gold"></div>
-                  <p className="text-textile-maroon font-semibold text-lg">Since 1981</p>
+                  <div className="h-1 w-16 bg-textile-blue"></div>
+                  <p className="text-textile-blue-dark font-semibold text-lg">Since 1981</p>
                 </div>
               </div>
 
-              <p className="text-textile-indigo/80 text-lg lg:text-xl leading-relaxed max-w-lg">
+              <p className="text-textile-blue/80 text-lg lg:text-xl leading-relaxed max-w-lg">
                 Connecting textile buyers and sellers across India with trust, reliability, 
                 and four decades of industry expertise from our base in Gorakhpur, Uttar Pradesh.
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-center space-x-2 text-textile-maroon">
+                <div className="flex items-center space-x-2 text-textile-blue-dark">
                   <ChevronRight size={20} />
                   <span className="font-medium">Sourcing from Premium Locations:</span>
                 </div>
                 
-                <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-textile-sand">
+                <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-textile-light-blue">
                   <div className="text-center">
-                    <div className="text-2xl font-playfair font-semibold text-textile-indigo transition-all duration-500">
+                    <div className="text-2xl font-playfair font-semibold text-textile-blue transition-all duration-500">
                       {regions[currentSlide]}
                     </div>
                     <div className="flex justify-center mt-2 space-x-1">
@@ -65,7 +65,7 @@ const Hero = () => {
                         <div
                           key={index}
                           className={`h-1 w-8 rounded transition-all duration-300 ${
-                            index === currentSlide ? 'bg-textile-maroon' : 'bg-textile-sand'
+                            index === currentSlide ? 'bg-textile-blue-dark' : 'bg-textile-light-blue'
                           }`}
                         />
                       ))}
@@ -77,7 +77,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#products"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-textile-maroon text-textile-cream font-semibold rounded-lg shadow-lg hover:bg-textile-maroon-dark transition-all duration-300 hover:shadow-xl group"
+                  className="inline-flex items-center justify-center px-8 py-3 bg-textile-blue text-white font-semibold rounded-lg shadow-lg hover:bg-textile-blue-dark transition-all duration-300 hover:shadow-xl group"
                 >
                   Explore Products
                   <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -85,7 +85,7 @@ const Hero = () => {
                 
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-textile-maroon text-textile-maroon font-semibold rounded-lg hover:bg-textile-maroon hover:text-textile-cream transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-textile-blue text-textile-blue font-semibold rounded-lg hover:bg-textile-blue hover:text-white transition-all duration-300"
                 >
                   Get In Touch
                 </a>
@@ -99,30 +99,30 @@ const Hero = () => {
                 <div className="w-80 h-80 lg:w-96 lg:h-96 mx-auto relative">
                   
                   {/* Outer Ring */}
-                  <div className="absolute inset-0 rounded-full border-4 border-textile-gold/30 animate-float"></div>
+                  <div className="absolute inset-0 rounded-full border-4 border-textile-blue/30 animate-float"></div>
                   
                   {/* Middle Ring */}
-                  <div className="absolute inset-4 rounded-full border-2 border-textile-maroon/20 animate-float" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute inset-4 rounded-full border-2 border-textile-blue/20 animate-float" style={{ animationDelay: '1s' }}></div>
                   
                   {/* Inner Circle */}
-                  <div className="absolute inset-8 rounded-full bg-gradient-to-br from-textile-maroon to-textile-maroon-dark flex items-center justify-center shadow-2xl animate-float" style={{ animationDelay: '2s' }}>
-                    <div className="text-center text-textile-cream">
+                  <div className="absolute inset-8 rounded-full bg-gradient-to-br from-textile-blue to-textile-blue-dark flex items-center justify-center shadow-2xl animate-float" style={{ animationDelay: '2s' }}>
+                    <div className="text-center text-white">
                       <div className="text-6xl font-playfair font-bold">42+</div>
                       <div className="text-lg font-medium">Years of Trust</div>
                     </div>
                   </div>
 
                   {/* Floating Elements */}
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-textile-gold rounded-full flex items-center justify-center shadow-lg animate-float text-textile-indigo font-bold text-sm" style={{ animationDelay: '0.5s' }}>
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-textile-blue rounded-full flex items-center justify-center shadow-lg animate-float text-white font-bold text-sm" style={{ animationDelay: '0.5s' }}>
                     1981
                   </div>
                   
-                  <div className="absolute bottom-0 left-0 w-20 h-20 bg-textile-indigo rounded-full flex items-center justify-center shadow-lg animate-float text-textile-cream font-semibold text-xs text-center" style={{ animationDelay: '1.5s' }}>
+                  <div className="absolute bottom-0 left-0 w-20 h-20 bg-textile-blue-dark rounded-full flex items-center justify-center shadow-lg animate-float text-white font-semibold text-xs text-center" style={{ animationDelay: '1.5s' }}>
                     Pan India<br/>Network
                   </div>
                   
-                  <div className="absolute top-1/2 -right-4 w-12 h-12 bg-textile-cream border-2 border-textile-maroon rounded-full flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '2.5s' }}>
-                    <div className="w-2 h-2 bg-textile-maroon rounded-full"></div>
+                  <div className="absolute top-1/2 -right-4 w-12 h-12 bg-white border-2 border-textile-blue rounded-full flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '2.5s' }}>
+                    <div className="w-2 h-2 bg-textile-blue rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const Hero = () => {
 
       {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 fill-textile-cream">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 fill-white">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
         </svg>
       </div>
